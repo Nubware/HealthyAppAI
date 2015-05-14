@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/additional_questions"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:layout_marginTop="35dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/financing"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:layout_marginTop="10dp" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/radioFinancing"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_yes"
+                    android:id="@+id/radioFinancingYes"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_no"
+                    android:id="@+id/radioFinancingNo"
+                    android:checked="true"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/support"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:layout_marginTop="10dp" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/radioSupport"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_yes"
+                    android:id="@+id/radioSupportYes"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_no"
+                    android:id="@+id/radioSupportNo"
+                    android:checked="true"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/education"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:layout_marginTop="10dp" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/radioEducation"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_yes"
+                    android:id="@+id/radioEducationYes"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_no"
+                    android:id="@+id/radioEducationNo"
+                    android:checked="true"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/distributorship"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:layout_marginTop="10dp" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/radioDistributor"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_yes"
+                    android:id="@+id/radioDistributorYes"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_no"
+                    android:id="@+id/radioDistributorNo"
+                    android:checked="true"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/light_parties"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:layout_marginTop="10dp" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/radioLightParties"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_yes"
+                    android:id="@+id/radioLightPartiesYes"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_no"
+                    android:id="@+id/radioLightPartiesNo"
+                    android:checked="true"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+            </RadioGroup>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:hint="@string/hint_other"
+                android:id="@+id/txtQuestionsOther"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:layout_marginTop="10dp" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:hint="@string/hint_comments"
+                android:id="@+id/txtQuestionsComments"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

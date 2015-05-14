@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/know_more"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:layout_marginTop="35dp" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/radioKnowMore"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_yes"
+                    android:id="@+id/radioKnowMoreYes"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_no"
+                    android:id="@+id/radioKnowMoreNo"
+                    android:checked="true"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+            </RadioGroup>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:hint="@string/hint_mail"
+                android:id="@+id/txtEmailKnow"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/have_family"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:layout_marginTop="35dp" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/radioFamiliy"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_yes"
+                    android:id="@+id/radioFamiliyYes"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_no"
+                    android:id="@+id/radioFamiliyNo"
+                    android:checked="true"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+            </RadioGroup>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:hint="@string/hint_preferred_city"
+                android:id="@+id/txtFamily"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/love_idea"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:layout_marginTop="35dp" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/own_light"
+                        android:layout_gravity="left"
+                        android:textAppearance="@android:style/TextAppearance.Medium" />
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:id="@+id/radioOwnLight"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/radio_yes"
+                            android:id="@+id/radioOwnLightYes"
+                            android:layout_gravity="center_horizontal"
+                            android:textAppearance="@android:style/TextAppearance.Medium" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/radio_no"
+                            android:id="@+id/radioOwnLightNo"
+                            android:checked="true"
+                            android:layout_gravity="center_horizontal"
+                            android:textAppearance="@android:style/TextAppearance.Medium" />
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rent_light"
+                        android:layout_gravity="left"
+                        android:textAppearance="@android:style/TextAppearance.Medium" />
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:id="@+id/radioRentLight"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/radio_yes"
+                            android:id="@+id/radioRentLightYes"
+                            android:layout_gravity="center_horizontal"
+                            android:textAppearance="@android:style/TextAppearance.Medium" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/radio_no"
+                            android:id="@+id/radioRentLightNo"
+                            android:checked="true"
+                            android:layout_gravity="center_horizontal"
+                            android:textAppearance="@android:style/TextAppearance.Medium" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/introduce_light"
+                        android:layout_gravity="left"
+                        android:textAppearance="@android:style/TextAppearance.Medium" />
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:id="@+id/radioIntroduceLight"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/radio_yes"
+                            android:id="@+id/radioIntroduceLightYes"
+                            android:layout_gravity="center_horizontal"
+                            android:textAppearance="@android:style/TextAppearance.Medium" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/radio_no"
+                            android:id="@+id/radioIntroduceLightNo"
+                            android:checked="true"
+                            android:layout_gravity="center_horizontal"
+                            android:textAppearance="@android:style/TextAppearance.Medium" />
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/host_presentation"
+                        android:layout_gravity="left"
+                        android:textAppearance="@android:style/TextAppearance.Medium" />
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:id="@+id/radioHost"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/radio_yes"
+                            android:id="@+id/radioHostYes"
+                            android:layout_gravity="center_horizontal"
+                            android:textAppearance="@android:style/TextAppearance.Medium" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/radio_no"
+                            android:id="@+id/radioHostNo"
+                            android:checked="true"
+                            android:layout_gravity="center_horizontal"
+                            android:textAppearance="@android:style/TextAppearance.Medium" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

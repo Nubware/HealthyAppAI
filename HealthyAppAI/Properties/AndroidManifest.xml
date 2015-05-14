@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.0" package="com.amazingideas.healthyappai" android:versionCode="2">
+	<uses-sdk android:minSdkVersion="16" android:targetSdkVersion="15" />
+	<application android:label="Healthy App (Beta Version)" android:icon="@drawable/IconHealthy" android:theme="@android:style/Theme.Holo.Light"></application>
+</manifest>

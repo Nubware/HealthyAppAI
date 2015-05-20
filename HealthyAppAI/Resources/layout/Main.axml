@@ -3,17 +3,24 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/bg_home">
+    android:background="@drawable/bg_home"
+    android:padding="10">
     <Button
         android:id="@+id/btnHome"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/home_button"
-        android:layout_marginTop="520dp" />
+        android:layout_marginTop="520dp"
+        android:shadowColor="#ffffffff"
+        android:textColor="#ffffffff"
+        android:shadowDx="10"
+        android:shadowDy="100"
+        android:background="#a7b7f73c" />
     <Button
         android:id="@+id/btnHomeTres"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Feedback List"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:background="#b04847e2" />
 </LinearLayout>

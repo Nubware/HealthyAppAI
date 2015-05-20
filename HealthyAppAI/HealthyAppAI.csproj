@@ -117,6 +117,7 @@
     <AndroidResource Include="Resources\drawable-xxxhdpi\bg.jpg" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\bg_home.jpg" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\IconHealthy.png" />
+    <AndroidResource Include="Resources\layout\CustomRow.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

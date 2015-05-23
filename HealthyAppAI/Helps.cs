@@ -43,7 +43,17 @@ namespace HealthyAppAI
 
 					if(!isFeedBack)
 					{
+						Model.nProspect.Estatus="Feedback";
+
 						SQLContext.insertProspect(Model.nProspect);
+					}
+					else
+					{
+						Model.nProspect.Estatus="Completed";
+
+						SQLContext.UpdateProspect(Model.nProspect.IDProspect, Model.nProspect);
+
+						frmtCurrent.Activity.StartActivity(typeof(FeedbackList));
 					}
 
 					Toast.MakeText(frmtCurrent.View.Context, strMessage + " Successfully Saved.", ToastLength.Short).Show();

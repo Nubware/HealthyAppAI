@@ -13,9 +13,7 @@ using Android.Widget;
 using Mono.Data.Sqlite;
 using System.Data;
 using System.Data.Sql;
-using DSoft.UI.Grid.Views;
-using DSoft.UI.Grid;
-using DSoft.Datatypes.Grid.Data;
+using Android.Util;
 
 
 namespace HealthyAppAI
@@ -23,52 +21,69 @@ namespace HealthyAppAI
 	[Activity]
 	public class FeedbackList : Activity
 	{
-		DSGridView mDataGrid;
+		public List<Prospect> lProspet;
 
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
-			base.OnCreate(savedInstanceState);
+			ListView listView;
 
-			SetContentView(Resource.Layout.FeedbackList);
-
-			this.FindViewById<Button>(Resource.Id.btnClear).Click += delegate {
-				
-				SqliteConnection connection = new SqliteConnection("Data Source=" + SQLContext.getDataBasePath());
-
-				SqliteCommand nCommand = connection.CreateCommand();
-
-				SqliteDataReader nReader;
-				string strRes = string.Empty;
-
-				nCommand.CommandText = "DELETE FROM PROSPECT";
-
-				connection.Open ();
-				nCommand.ExecuteNonQuery ();
-
-				connection.Close ();
-			};
-
-			mDataGrid = this.FindViewById<DSGridView>(Resource.Id.myDataGrid);
-
-			if (mDataGrid != null)
+			try
 			{
-				mDataGrid.DataSource = fillGrid();
+				Log.Debug("FeedBack","Create FeedBack");
+				base.OnCreate(savedInstanceState);
+
+				SetContentView(Resource.Layout.FeedbackList);
+
+				this.FindViewById<Button>(Resource.Id.btnClear).Click += delegate {
+
+					SqliteConnection connection = new SqliteConnection("Data Source=" + SQLContext.getDataBasePath());
+
+					SqliteCommand nCommand = connection.CreateCommand();
 
 
-				mDataGrid.OnRowSelect += (Object rowSender, int row) => 
-				{
-					string IDProspect = ((DSGridRowView)rowSender).Processor.RowId;
+					string strRes = string.Empty;
 
-					string test = fillProspect(IDProspect);
+					nCommand.CommandText = "DELETE FROM PROSPECT";
 
-					Intent intent = new Intent(this, typeof(TabContainer));
-					intent.PutExtra("FormType", "FeedBack");
+					connection.Open ();
+					nCommand.ExecuteNonQuery ();
 
-					StartActivity(intent);
+					connection.Close ();
 				};
-				//mDataGrid.TableName = "DT1";
+
+				listView = FindViewById<ListView>(Resource.Id.vFeedbackList);
+
+				lProspet = SQLContext.getProspects("Feedback");
+
+				listView.Adapter = new CustomAdapter(this, lProspet);
+
+				listView.ItemClick += OnListitemClick;
+
 			}
-			//this.bindGrid();
+			catch(Exception excep) {
+
+				Log.Error("FeedBack",excep.Message);
+
+			}
+		}
+
+
+		void OnListitemClick(Object sender, AdapterView.ItemClickEventArgs e)
+		{	
+			var listView = sender as ListView;
+
+			Prospect t = lProspet[e.Position];
+
+			Toast.MakeText (this, t.FirstName, ToastLength.Long).Show ();
+
+			string IDProspect = t.IDProspect;
+			fillProspect (IDProspect);
+
+			Intent intent = new Intent(this, typeof(TabContainer));
+			intent.PutExtra("FormType", "FeedBack");
+
+			StartActivity(intent);
+			Finish ();
 		}
 
 		public static string fillProspect(string IDProspect)
@@ -106,53 +121,9 @@ namespace HealthyAppAI
 			return strRes;
 		}
 
-		public static DSDataColumn getDataTable(String name, String caption,float Width ,bool readOnly = true, bool AllowSort = false)
-		{
-			DSDataColumn resTable;
 
-			resTable = new DSDataColumn (name);
-			resTable.Caption = caption;
-			resTable.ReadOnly = readOnly;
-			resTable.DataType = typeof(string);
-			resTable.AllowSort = AllowSort;
-			resTable.Width = Width;
 
-			return resTable;
-		}
 
-		public static DSDataTable fillGrid()
-		{			
-			DataTable DT = new DataTable ("NombreDT");
-			DSDataTable finalDT = new DSDataTable("NombreDT");
-
-			finalDT.Columns.Add(getDataTable("FirstName","FirstName",500));
-			finalDT.Columns.Add(getDataTable("LastName","LastName",500));
-			finalDT.Columns.Add(getDataTable("City","City",500));
-
-			SqliteConnection connection = new SqliteConnection("Data Source=" + SQLContext.getDataBasePath());
-
-			String nCommand;
-			SqliteDataAdapter nAdapter;
-
-			nCommand = "SELECT IDProspect, FirstName, LastName, City FROM Prospect";
-
-			nAdapter = new SqliteDataAdapter (nCommand, connection);
-			nAdapter.Fill (DT);
-
-			foreach (DataRow fila in DT.Rows) 
-			{
-				var dr = new DSDataRow ();
-				dr.RowId = fila [0].ToString();
-
-				dr ["FirstName"] = fila [1];
-				dr ["LastName"] = fila [2];
-				dr ["City"] = fila [3];
-
-				finalDT.Rows.Add (dr);
-			}
-
-			return finalDT;
-		}
 
 
 

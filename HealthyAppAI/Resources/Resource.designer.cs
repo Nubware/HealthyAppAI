@@ -26,8 +26,6 @@ namespace HealthyAppAI
 		
 		public static void UpdateIdValues()
 		{
-			global::DSoft.UI.Resource.Drawable.checkmark = global::HealthyAppAI.Resource.Drawable.checkmark;
-			global::DSoft.UI.Resource.String.library_name = global::HealthyAppAI.Resource.String.library_name;
 		}
 		
 		public partial class Array
@@ -69,13 +67,10 @@ namespace HealthyAppAI
 			public const int bg_home = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int checkmark = 2130837506;
+			public const int Icon = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int Icon = 2130837507;
-			
-			// aapt resource value: 0x7f020004
-			public const int IconHealthy = 2130837508;
+			public const int IconHealthy = 2130837507;
 			
 			static Drawable()
 			{
@@ -90,20 +85,35 @@ namespace HealthyAppAI
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f06005d
-			public const int btnClear = 2131099741;
+			// aapt resource value: 0x7f0600a8
+			public const int Text = 2131099816;
 			
-			// aapt resource value: 0x7f0600a2
-			public const int btnHome = 2131099810;
+			// aapt resource value: 0x7f0600a9
+			public const int Text1 = 2131099817;
 			
-			// aapt resource value: 0x7f0600a3
-			public const int btnHomeTres = 2131099811;
+			// aapt resource value: 0x7f0600aa
+			public const int Text2 = 2131099818;
+			
+			// aapt resource value: 0x7f0600a7
+			public const int btn4 = 2131099815;
+			
+			// aapt resource value: 0x7f06005e
+			public const int btnClear = 2131099742;
 			
 			// aapt resource value: 0x7f0600a6
-			public const int btnNext = 2131099814;
+			public const int btnFeedComplete = 2131099814;
+			
+			// aapt resource value: 0x7f0600a4
+			public const int btnHome = 2131099812;
 			
 			// aapt resource value: 0x7f0600a5
-			public const int btnPrevious = 2131099813;
+			public const int btnHomeTres = 2131099813;
+			
+			// aapt resource value: 0x7f0600ad
+			public const int btnNext = 2131099821;
+			
+			// aapt resource value: 0x7f0600ac
+			public const int btnPrevious = 2131099820;
 			
 			// aapt resource value: 0x7f06005c
 			public const int checkReadRealease = 2131099740;
@@ -111,14 +121,14 @@ namespace HealthyAppAI
 			// aapt resource value: 0x7f060005
 			public const int dropProvince = 2131099653;
 			
-			// aapt resource value: 0x7f0600a4
-			public const int fragmentContainer = 2131099812;
+			// aapt resource value: 0x7f0600ab
+			public const int fragmentContainer = 2131099819;
+			
+			// aapt resource value: 0x7f0600a3
+			public const int imageView1 = 2131099811;
 			
 			// aapt resource value: 0x7f06000c
 			public const int interested = 2131099660;
-			
-			// aapt resource value: 0x7f06005e
-			public const int myDataGrid = 2131099742;
 			
 			// aapt resource value: 0x7f060019
 			public const int radioAcne = 2131099673;
@@ -219,44 +229,44 @@ namespace HealthyAppAI
 			// aapt resource value: 0x7f060035
 			public const int radioDiabetesYes = 2131099701;
 			
-			// aapt resource value: 0x7f06009a
-			public const int radioDistributor = 2131099802;
+			// aapt resource value: 0x7f06009b
+			public const int radioDistributor = 2131099803;
+			
+			// aapt resource value: 0x7f06009d
+			public const int radioDistributorNo = 2131099805;
 			
 			// aapt resource value: 0x7f06009c
-			public const int radioDistributorNo = 2131099804;
-			
-			// aapt resource value: 0x7f06009b
-			public const int radioDistributorYes = 2131099803;
-			
-			// aapt resource value: 0x7f060097
-			public const int radioEducation = 2131099799;
-			
-			// aapt resource value: 0x7f060099
-			public const int radioEducationNo = 2131099801;
+			public const int radioDistributorYes = 2131099804;
 			
 			// aapt resource value: 0x7f060098
-			public const int radioEducationYes = 2131099800;
+			public const int radioEducation = 2131099800;
 			
-			// aapt resource value: 0x7f060067
-			public const int radioEnergized = 2131099751;
+			// aapt resource value: 0x7f06009a
+			public const int radioEducationNo = 2131099802;
 			
-			// aapt resource value: 0x7f06006a
-			public const int radioEnergizedNeutral = 2131099754;
-			
-			// aapt resource value: 0x7f060069
-			public const int radioEnergizedNo = 2131099753;
+			// aapt resource value: 0x7f060099
+			public const int radioEducationYes = 2131099801;
 			
 			// aapt resource value: 0x7f060068
-			public const int radioEnergizedYes = 2131099752;
+			public const int radioEnergized = 2131099752;
 			
-			// aapt resource value: 0x7f060081
-			public const int radioFamiliy = 2131099777;
+			// aapt resource value: 0x7f06006b
+			public const int radioEnergizedNeutral = 2131099755;
 			
-			// aapt resource value: 0x7f060083
-			public const int radioFamiliyNo = 2131099779;
+			// aapt resource value: 0x7f06006a
+			public const int radioEnergizedNo = 2131099754;
+			
+			// aapt resource value: 0x7f060069
+			public const int radioEnergizedYes = 2131099753;
 			
 			// aapt resource value: 0x7f060082
-			public const int radioFamiliyYes = 2131099778;
+			public const int radioFamiliy = 2131099778;
+			
+			// aapt resource value: 0x7f060084
+			public const int radioFamiliyNo = 2131099780;
+			
+			// aapt resource value: 0x7f060083
+			public const int radioFamiliyYes = 2131099779;
 			
 			// aapt resource value: 0x7f060037
 			public const int radioFibro = 2131099703;
@@ -267,14 +277,14 @@ namespace HealthyAppAI
 			// aapt resource value: 0x7f060038
 			public const int radioFibroYes = 2131099704;
 			
-			// aapt resource value: 0x7f060091
-			public const int radioFinancing = 2131099793;
+			// aapt resource value: 0x7f060092
+			public const int radioFinancing = 2131099794;
+			
+			// aapt resource value: 0x7f060094
+			public const int radioFinancingNo = 2131099796;
 			
 			// aapt resource value: 0x7f060093
-			public const int radioFinancingNo = 2131099795;
-			
-			// aapt resource value: 0x7f060092
-			public const int radioFinancingYes = 2131099794;
+			public const int radioFinancingYes = 2131099795;
 			
 			// aapt resource value: 0x7f06003a
 			public const int radioHair = 2131099706;
@@ -285,44 +295,44 @@ namespace HealthyAppAI
 			// aapt resource value: 0x7f06003b
 			public const int radioHairYes = 2131099707;
 			
-			// aapt resource value: 0x7f06006f
-			public const int radioHappier = 2131099759;
+			// aapt resource value: 0x7f060070
+			public const int radioHappier = 2131099760;
+			
+			// aapt resource value: 0x7f060073
+			public const int radioHappierNeutral = 2131099763;
 			
 			// aapt resource value: 0x7f060072
-			public const int radioHappierNeutral = 2131099762;
+			public const int radioHappierNo = 2131099762;
 			
 			// aapt resource value: 0x7f060071
-			public const int radioHappierNo = 2131099761;
-			
-			// aapt resource value: 0x7f060070
-			public const int radioHappierYes = 2131099760;
-			
-			// aapt resource value: 0x7f06008e
-			public const int radioHost = 2131099790;
-			
-			// aapt resource value: 0x7f060090
-			public const int radioHostNo = 2131099792;
+			public const int radioHappierYes = 2131099761;
 			
 			// aapt resource value: 0x7f06008f
-			public const int radioHostYes = 2131099791;
+			public const int radioHost = 2131099791;
 			
-			// aapt resource value: 0x7f06008b
-			public const int radioIntroduceLight = 2131099787;
+			// aapt resource value: 0x7f060091
+			public const int radioHostNo = 2131099793;
 			
-			// aapt resource value: 0x7f06008d
-			public const int radioIntroduceLightNo = 2131099789;
+			// aapt resource value: 0x7f060090
+			public const int radioHostYes = 2131099792;
 			
 			// aapt resource value: 0x7f06008c
-			public const int radioIntroduceLightYes = 2131099788;
+			public const int radioIntroduceLight = 2131099788;
 			
-			// aapt resource value: 0x7f06007d
-			public const int radioKnowMore = 2131099773;
+			// aapt resource value: 0x7f06008e
+			public const int radioIntroduceLightNo = 2131099790;
 			
-			// aapt resource value: 0x7f06007f
-			public const int radioKnowMoreNo = 2131099775;
+			// aapt resource value: 0x7f06008d
+			public const int radioIntroduceLightYes = 2131099789;
 			
 			// aapt resource value: 0x7f06007e
-			public const int radioKnowMoreYes = 2131099774;
+			public const int radioKnowMore = 2131099774;
+			
+			// aapt resource value: 0x7f060080
+			public const int radioKnowMoreNo = 2131099776;
+			
+			// aapt resource value: 0x7f06007f
+			public const int radioKnowMoreYes = 2131099775;
 			
 			// aapt resource value: 0x7f060013
 			public const int radioLight = 2131099667;
@@ -330,29 +340,29 @@ namespace HealthyAppAI
 			// aapt resource value: 0x7f060015
 			public const int radioLightNo = 2131099669;
 			
-			// aapt resource value: 0x7f06009d
-			public const int radioLightParties = 2131099805;
+			// aapt resource value: 0x7f06009e
+			public const int radioLightParties = 2131099806;
+			
+			// aapt resource value: 0x7f0600a0
+			public const int radioLightPartiesNo = 2131099808;
 			
 			// aapt resource value: 0x7f06009f
-			public const int radioLightPartiesNo = 2131099807;
-			
-			// aapt resource value: 0x7f06009e
-			public const int radioLightPartiesYes = 2131099806;
+			public const int radioLightPartiesYes = 2131099807;
 			
 			// aapt resource value: 0x7f060014
 			public const int radioLightYes = 2131099668;
 			
-			// aapt resource value: 0x7f06006b
-			public const int radioLighter = 2131099755;
+			// aapt resource value: 0x7f06006c
+			public const int radioLighter = 2131099756;
+			
+			// aapt resource value: 0x7f06006f
+			public const int radioLighterNeutral = 2131099759;
 			
 			// aapt resource value: 0x7f06006e
-			public const int radioLighterNeutral = 2131099758;
+			public const int radioLighterNo = 2131099758;
 			
 			// aapt resource value: 0x7f06006d
-			public const int radioLighterNo = 2131099757;
-			
-			// aapt resource value: 0x7f06006c
-			public const int radioLighterYes = 2131099756;
+			public const int radioLighterYes = 2131099757;
 			
 			// aapt resource value: 0x7f06003d
 			public const int radioNerve = 2131099709;
@@ -366,26 +376,26 @@ namespace HealthyAppAI
 			// aapt resource value: 0x7f06000e
 			public const int radioNo = 2131099662;
 			
-			// aapt resource value: 0x7f060085
-			public const int radioOwnLight = 2131099781;
+			// aapt resource value: 0x7f060086
+			public const int radioOwnLight = 2131099782;
+			
+			// aapt resource value: 0x7f060088
+			public const int radioOwnLightNo = 2131099784;
 			
 			// aapt resource value: 0x7f060087
-			public const int radioOwnLightNo = 2131099783;
-			
-			// aapt resource value: 0x7f060086
-			public const int radioOwnLightYes = 2131099782;
-			
-			// aapt resource value: 0x7f060063
-			public const int radioPain = 2131099747;
-			
-			// aapt resource value: 0x7f060066
-			public const int radioPainNeutral = 2131099750;
-			
-			// aapt resource value: 0x7f060065
-			public const int radioPainNo = 2131099749;
+			public const int radioOwnLightYes = 2131099783;
 			
 			// aapt resource value: 0x7f060064
-			public const int radioPainYes = 2131099748;
+			public const int radioPain = 2131099748;
+			
+			// aapt resource value: 0x7f060067
+			public const int radioPainNeutral = 2131099751;
+			
+			// aapt resource value: 0x7f060066
+			public const int radioPainNo = 2131099750;
+			
+			// aapt resource value: 0x7f060065
+			public const int radioPainYes = 2131099749;
 			
 			// aapt resource value: 0x7f060049
 			public const int radioPhysical = 2131099721;
@@ -405,35 +415,35 @@ namespace HealthyAppAI
 			// aapt resource value: 0x7f060011
 			public const int radioPregnantYes = 2131099665;
 			
-			// aapt resource value: 0x7f06005f
-			public const int radioRelaxed = 2131099743;
+			// aapt resource value: 0x7f060060
+			public const int radioRelaxed = 2131099744;
+			
+			// aapt resource value: 0x7f060063
+			public const int radioRelaxedNeutral = 2131099747;
 			
 			// aapt resource value: 0x7f060062
-			public const int radioRelaxedNeutral = 2131099746;
+			public const int radioRelaxedNo = 2131099746;
 			
 			// aapt resource value: 0x7f060061
-			public const int radioRelaxedNo = 2131099745;
-			
-			// aapt resource value: 0x7f060060
-			public const int radioRelaxedYes = 2131099744;
-			
-			// aapt resource value: 0x7f060088
-			public const int radioRentLight = 2131099784;
-			
-			// aapt resource value: 0x7f06008a
-			public const int radioRentLightNo = 2131099786;
+			public const int radioRelaxedYes = 2131099745;
 			
 			// aapt resource value: 0x7f060089
-			public const int radioRentLightYes = 2131099785;
+			public const int radioRentLight = 2131099785;
 			
-			// aapt resource value: 0x7f060079
-			public const int radioSessions = 2131099769;
+			// aapt resource value: 0x7f06008b
+			public const int radioRentLightNo = 2131099787;
 			
-			// aapt resource value: 0x7f06007b
-			public const int radioSessionsNo = 2131099771;
+			// aapt resource value: 0x7f06008a
+			public const int radioRentLightYes = 2131099786;
 			
 			// aapt resource value: 0x7f06007a
-			public const int radioSessionsYes = 2131099770;
+			public const int radioSessions = 2131099770;
+			
+			// aapt resource value: 0x7f06007c
+			public const int radioSessionsNo = 2131099772;
+			
+			// aapt resource value: 0x7f06007b
+			public const int radioSessionsYes = 2131099771;
 			
 			// aapt resource value: 0x7f06004c
 			public const int radioSkin = 2131099724;
@@ -453,26 +463,26 @@ namespace HealthyAppAI
 			// aapt resource value: 0x7f060041
 			public const int radioStrokeYes = 2131099713;
 			
-			// aapt resource value: 0x7f060094
-			public const int radioSupport = 2131099796;
+			// aapt resource value: 0x7f060095
+			public const int radioSupport = 2131099797;
+			
+			// aapt resource value: 0x7f060097
+			public const int radioSupportNo = 2131099799;
 			
 			// aapt resource value: 0x7f060096
-			public const int radioSupportNo = 2131099798;
-			
-			// aapt resource value: 0x7f060095
-			public const int radioSupportYes = 2131099797;
-			
-			// aapt resource value: 0x7f060073
-			public const int radioSympthons = 2131099763;
-			
-			// aapt resource value: 0x7f060076
-			public const int radioSympthonsNeutral = 2131099766;
-			
-			// aapt resource value: 0x7f060075
-			public const int radioSympthonsNo = 2131099765;
+			public const int radioSupportYes = 2131099798;
 			
 			// aapt resource value: 0x7f060074
-			public const int radioSympthonsYes = 2131099764;
+			public const int radioSympthons = 2131099764;
+			
+			// aapt resource value: 0x7f060077
+			public const int radioSympthonsNeutral = 2131099767;
+			
+			// aapt resource value: 0x7f060076
+			public const int radioSympthonsNo = 2131099766;
+			
+			// aapt resource value: 0x7f060075
+			public const int radioSympthonsYes = 2131099765;
 			
 			// aapt resource value: 0x7f060043
 			public const int radioTBI = 2131099715;
@@ -522,6 +532,9 @@ namespace HealthyAppAI
 			// aapt resource value: 0x7f06000b
 			public const int textView = 2131099659;
 			
+			// aapt resource value: 0x7f06005d
+			public const int textView1 = 2131099741;
+			
 			// aapt resource value: 0x7f060003
 			public const int txtCity = 2131099651;
 			
@@ -534,17 +547,17 @@ namespace HealthyAppAI
 			// aapt resource value: 0x7f06000a
 			public const int txtEmail = 2131099658;
 			
-			// aapt resource value: 0x7f060080
-			public const int txtEmailKnow = 2131099776;
+			// aapt resource value: 0x7f060081
+			public const int txtEmailKnow = 2131099777;
+			
+			// aapt resource value: 0x7f060079
+			public const int txtExperienceComments = 2131099769;
 			
 			// aapt resource value: 0x7f060078
-			public const int txtExperienceComments = 2131099768;
+			public const int txtExperienceOther = 2131099768;
 			
-			// aapt resource value: 0x7f060077
-			public const int txtExperienceOther = 2131099767;
-			
-			// aapt resource value: 0x7f060084
-			public const int txtFamily = 2131099780;
+			// aapt resource value: 0x7f060085
+			public const int txtFamily = 2131099781;
 			
 			// aapt resource value: 0x7f060000
 			public const int txtFirstName = 2131099648;
@@ -564,8 +577,8 @@ namespace HealthyAppAI
 			// aapt resource value: 0x7f060006
 			public const int txtPostalCode = 2131099654;
 			
-			// aapt resource value: 0x7f06007c
-			public const int txtPreferredCity = 2131099772;
+			// aapt resource value: 0x7f06007d
+			public const int txtPreferredCity = 2131099773;
 			
 			// aapt resource value: 0x7f060057
 			public const int txtPrintName = 2131099735;
@@ -573,11 +586,11 @@ namespace HealthyAppAI
 			// aapt resource value: 0x7f060002
 			public const int txtProfession = 2131099650;
 			
-			// aapt resource value: 0x7f0600a1
-			public const int txtQuestionsComments = 2131099809;
+			// aapt resource value: 0x7f0600a2
+			public const int txtQuestionsComments = 2131099810;
 			
-			// aapt resource value: 0x7f0600a0
-			public const int txtQuestionsOther = 2131099808;
+			// aapt resource value: 0x7f0600a1
+			public const int txtQuestionsOther = 2131099809;
 			
 			// aapt resource value: 0x7f060004
 			public const int txtStreet = 2131099652;
@@ -590,6 +603,9 @@ namespace HealthyAppAI
 			
 			// aapt resource value: 0x7f060008
 			public const int txtWorkPhone = 2131099656;
+			
+			// aapt resource value: 0x7f06005f
+			public const int vFeedbackList = 2131099743;
 			
 			static Id()
 			{
@@ -617,22 +633,31 @@ namespace HealthyAppAI
 			public const int ApplicationStep4 = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int FeedbackList = 2130903044;
+			public const int CustomRow = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int FeedbackStep1 = 2130903045;
+			public const int FeedbackComplete = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int FeedbackStep2 = 2130903046;
+			public const int FeedbackList = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int FeedbackStep3 = 2130903047;
+			public const int FeedbackStep1 = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int Main = 2130903048;
+			public const int FeedbackStep2 = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int TabContainer = 2130903049;
+			public const int FeedbackStep3 = 2130903049;
+			
+			// aapt resource value: 0x7f03000a
+			public const int Main = 2130903050;
+			
+			// aapt resource value: 0x7f03000b
+			public const int RowFeedbackList = 2130903051;
+			
+			// aapt resource value: 0x7f03000c
+			public const int TabContainer = 2130903052;
 			
 			static Layout()
 			{
@@ -682,6 +707,9 @@ namespace HealthyAppAI
 			
 			// aapt resource value: 0x7f040021
 			public const int circulation = 2130968609;
+			
+			// aapt resource value: 0x7f040057
+			public const int city_colum = 2130968663;
 			
 			// aapt resource value: 0x7f04003b
 			public const int comment_experience = 2130968635;
@@ -803,9 +831,6 @@ namespace HealthyAppAI
 			// aapt resource value: 0x7f040046
 			public const int know_more = 2130968646;
 			
-			// aapt resource value: 0x7f040054
-			public const int library_name = 2130968660;
-			
 			// aapt resource value: 0x7f040052
 			public const int light_parties = 2130968658;
 			
@@ -817,6 +842,9 @@ namespace HealthyAppAI
 			
 			// aapt resource value: 0x7f040048
 			public const int love_idea = 2130968648;
+			
+			// aapt resource value: 0x7f040056
+			public const int name_colum = 2130968662;
 			
 			// aapt resource value: 0x7f040028
 			public const int nerve = 2130968616;
@@ -889,6 +917,12 @@ namespace HealthyAppAI
 			
 			// aapt resource value: 0x7f040008
 			public const int title_activity_application = 2130968584;
+			
+			// aapt resource value: 0x7f040055
+			public const int title_feedbackComplete = 2130968661;
+			
+			// aapt resource value: 0x7f040054
+			public const int title_feedbackList = 2130968660;
 			
 			// aapt resource value: 0x7f040031
 			public const int top_areas = 2130968625;

@@ -2,105 +2,109 @@
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
   
-  <string name="ApplicationName">Healthy App (Beta Version)</string>
-  <string name="home_button">Access Application</string>
+	<string name="ApplicationName">Healthy App (Beta Version)</string>
+	<string name="home_button">Access Application</string>
 
-  <string name="prev_button">Previous</string>
-  <string name="next_button">Next</string>
-  
-  <string name="hint_firstname">First Name</string>
-  <string name="hint_lastname">Last Name</string>
-  <string name="hint_profession">Profession</string>
-  <string name="title_activity_application">ApplicationActivity</string>
-  <string name="hint_street">Street</string>
-  <string name="hint_city">City</string>
-  <string name="hint_provinces">Select a province</string>
-  <string-array name="provinces_array">
-    <item>Province</item>
-    <item>AB</item>
-    <item>BC</item>
-    <item>MB</item>
-    <item>NB</item>
-    <item>NL</item>
-    <item>NS</item>
-    <item>NT</item>
-    <item>NU</item>
-    <item>ON</item>
-    <item>PE</item>
-    <item>QC</item>
-    <item>SK</item>
-    <item>YK</item>
-  </string-array>
-  <string name="hint_postalcode">Postal Code</string>
-  <string name="hint_homephone">Home Phone</string>
-  <string name="hint_workphone">Work Phone</string>
-  <string name="hint_mobile">Mobile</string>
-  <string name="hint_mail">Email</string>
-  <string name="receive_mail">Would you like to receive occasional information via email about Light Energy, In Light Wellness Systems and Whole Health at Home?</string>
-  <string name="radio_yes">Yes</string>
-  <string name="radio_no">No</string>
-  <string name="radio_neutral">Neutral</string>
-  <string name="taking_med">Are you taking any medications or herbal remedies that may make you light sensitive? (ex. Belladonna, Tetracycline, Doxycycline, etc.) If "YES", please list:</string>
-  <string name="help_us">Please help us to serve you better. Please check all of the following conditions that apply to you.</string>
-  <string name="are_you">Are you:</string>
-  <string name="pregnant">Pregnant?</string>
-  <string name="light_sensitive">Light Sensitive?</string>
-  <string name="cancer">Undergoing cancer treatments?</string>
-  <string name="you_have">Do you have:</string>
-  <string name="acne">Acne</string>
-  <string name="allergies">Allergies</string>
-  <string name="alzheimer">Alzheimer</string>
-  <string name="arthritis">Arthritis</string>
-  <string name="circadian">Circadian Rhythm / Sleep Problems</string>
-  <string name="circulation">Circulation Problems</string>
-  <string name="chronic">Chronic Pain</string>
-  <string name="dermatological">Dermatological Issues</string>
-  <string name="depression">Depression / Mood Disorder / PTSD</string>
-  <string name="diabetes">Diabetes</string>
-  <string name="fibro">Fibromyalgia</string>
-  <string name="hair">Hair Loss</string>
-  <string name="nerve">Nerve Damage</string>
-  <string name="stroke">Stroke</string>
-  <string name="tbi">TBI / Concussion</string>
-  <string name="thyroid">Thyroid Issues</string>
-  <string name="interested">Are you interested in:</string>
-  <string name="physical">Physical Training and Exercise</string>
-  <string name="skin">Skin Rejuvenation</string>
-  <string name="weight_loss">Weight Loss / Body Contouring</string>
-  <string name="wound">Wound Healing</string>
-  <string name="top_areas">Please list your top areas of concern:</string>
-  <string name="hint_top1">Concern 1</string>
-  <string name="hint_top2">Concern 2</string>
-  <string name="hint_top3">Concern 3</string>
-  <string name="read_waiver">I have read this Release prior to signing and I understand its effect. I am aware that by signing this Release I am waiving certain legal rights, which I or my heirs, next of kin, executors, administrators and assigns may otherwise have had against Releasees.</string>
-  <string name="hint_printname">Print Name</string>
-  <string name="hint_initial">Initial</string>
-  <string name="hint_witnessname">Witness Name</string>
-  <string name="thank_you_app">Thank you so much for taking the time to fill in this form!</string>
-  <string name="read_release">I have read the Release and Waiver</string>
-  <string name="comment_experience">1.) Please comment on your experience with the Light Application session. I feel:</string>
-  <string name="relaxed">More Relaxed</string>
-  <string name="pain">Less Pain</string>
-  <string name="energized">Energized</string>
-  <string name="lighter">Lighter</string>
-  <string name="happier">Happier</string>
-  <string name="sympthons">Sympthoms have shifted</string>
-  <string name="hint_other">Other</string>
-  <string name="hint_comments">Additional Comments</string>
-  <string name="further_sessions">2.) I would like to receive further sessions.</string>
-  <string name="hint_preferred_city">Preferred City</string>
-  <string name="know_more">3.) I would like to know more about the benefits of Light Energy. Please send me an informational email.</string>
-  <string name="have_family">4.) I have a friend or family member who would benefit from Light Energy. Please provide me with a referral to a Light Energy Practitioner</string>
-  <string name="love_idea">5.) I love the idea of lighting up the world. I would like to:</string>
-  <string name="own_light">Own a Light Energy System</string>
-  <string name="rent_light">Rent a Light Energy System</string>
-  <string name="introduce_light">Introduce others to Light Energy</string>
-  <string name="host_presentation">Host a presentation at my home or office</string>
-  <string name="additional_questions">6.) I have additional questions, please contact me by phone about:</string>
-  <string name="financing">Financing</string>
-  <string name="support">Support</string>
-  <string name="education">Education and Certification</string>
-  <string name="distributorship">Introducing other / Distributorship</string>
-  <string name="light_parties">Light Parties</string>
-  <string name="external_dir">Directory</string>
+	<string name="prev_button">Previous</string>
+	<string name="next_button">Next</string>
+
+	<string name="hint_firstname">First Name</string>
+	<string name="hint_lastname">Last Name</string>
+	<string name="hint_profession">Profession</string>
+	<string name="title_activity_application">ApplicationActivity</string>
+	<string name="hint_street">Street</string>
+	<string name="hint_city">City</string>
+	<string name="hint_provinces">Select a province</string>
+	<string-array name="provinces_array">
+	<item>Province</item>
+	<item>AB</item>
+	<item>BC</item>
+	<item>MB</item>
+	<item>NB</item>
+	<item>NL</item>
+	<item>NS</item>
+	<item>NT</item>
+	<item>NU</item>
+	<item>ON</item>
+	<item>PE</item>
+	<item>QC</item>
+	<item>SK</item>
+	<item>YK</item>
+	</string-array>
+	<string name="hint_postalcode">Postal Code</string>
+	<string name="hint_homephone">Home Phone</string>
+	<string name="hint_workphone">Work Phone</string>
+	<string name="hint_mobile">Mobile</string>
+	<string name="hint_mail">Email</string>
+	<string name="receive_mail">Would you like to receive occasional information via email about Light Energy, In Light Wellness Systems and Whole Health at Home?</string>
+	<string name="radio_yes">Yes</string>
+	<string name="radio_no">No</string>
+	<string name="radio_neutral">Neutral</string>
+	<string name="taking_med">Are you taking any medications or herbal remedies that may make you light sensitive? (ex. Belladonna, Tetracycline, Doxycycline, etc.) If "YES", please list:</string>
+	<string name="help_us">Please help us to serve you better. Please check all of the following conditions that apply to you.</string>
+	<string name="are_you">Are you:</string>
+	<string name="pregnant">Pregnant?</string>
+	<string name="light_sensitive">Light Sensitive?</string>
+	<string name="cancer">Undergoing cancer treatments?</string>
+	<string name="you_have">Do you have:</string>
+	<string name="acne">Acne</string>
+	<string name="allergies">Allergies</string>
+	<string name="alzheimer">Alzheimer</string>
+	<string name="arthritis">Arthritis</string>
+	<string name="circadian">Circadian Rhythm / Sleep Problems</string>
+	<string name="circulation">Circulation Problems</string>
+	<string name="chronic">Chronic Pain</string>
+	<string name="dermatological">Dermatological Issues</string>
+	<string name="depression">Depression / Mood Disorder / PTSD</string>
+	<string name="diabetes">Diabetes</string>
+	<string name="fibro">Fibromyalgia</string>
+	<string name="hair">Hair Loss</string>
+	<string name="nerve">Nerve Damage</string>
+	<string name="stroke">Stroke</string>
+	<string name="tbi">TBI / Concussion</string>
+	<string name="thyroid">Thyroid Issues</string>
+	<string name="interested">Are you interested in:</string>
+	<string name="physical">Physical Training and Exercise</string>
+	<string name="skin">Skin Rejuvenation</string>
+	<string name="weight_loss">Weight Loss / Body Contouring</string>
+	<string name="wound">Wound Healing</string>
+	<string name="top_areas">Please list your top areas of concern:</string>
+	<string name="hint_top1">Concern 1</string>
+	<string name="hint_top2">Concern 2</string>
+	<string name="hint_top3">Concern 3</string>
+	<string name="read_waiver">I have read this Release prior to signing and I understand its effect. I am aware that by signing this Release I am waiving certain legal rights, which I or my heirs, next of kin, executors, administrators and assigns may otherwise have had against Releasees.</string>
+	<string name="hint_printname">Print Name</string>
+	<string name="hint_initial">Initial</string>
+	<string name="hint_witnessname">Witness Name</string>
+	<string name="thank_you_app">Thank you so much for taking the time to fill in this form!</string>
+	<string name="read_release">I have read the Release and Waiver</string>
+	<string name="comment_experience">1.) Please comment on your experience with the Light Application session. I feel:</string>
+	<string name="relaxed">More Relaxed</string>
+	<string name="pain">Less Pain</string>
+	<string name="energized">Energized</string>
+	<string name="lighter">Lighter</string>
+	<string name="happier">Happier</string>
+	<string name="sympthons">Sympthoms have shifted</string>
+	<string name="hint_other">Other</string>
+	<string name="hint_comments">Additional Comments</string>
+	<string name="further_sessions">2.) I would like to receive further sessions.</string>
+	<string name="hint_preferred_city">Preferred City</string>
+	<string name="know_more">3.) I would like to know more about the benefits of Light Energy. Please send me an informational email.</string>
+	<string name="have_family">4.) I have a friend or family member who would benefit from Light Energy. Please provide me with a referral to a Light Energy Practitioner</string>
+	<string name="love_idea">5.) I love the idea of lighting up the world. I would like to:</string>
+	<string name="own_light">Own a Light Energy System</string>
+	<string name="rent_light">Rent a Light Energy System</string>
+	<string name="introduce_light">Introduce others to Light Energy</string>
+	<string name="host_presentation">Host a presentation at my home or office</string>
+	<string name="additional_questions">6.) I have additional questions, please contact me by phone about:</string>
+	<string name="financing">Financing</string>
+	<string name="support">Support</string>
+	<string name="education">Education and Certification</string>
+	<string name="distributorship">Introducing other / Distributorship</string>
+	<string name="light_parties">Light Parties</string>
+	<string name="external_dir">Directory</string>
+	<string name="title_feedbackList">Demonstration Feedback List</string>
+	<string name="title_feedbackComplete">Feedback Complete</string>
+	<string name="name_colum">Name</string>
+	<string name="city_colum">City</string>
 </resources>

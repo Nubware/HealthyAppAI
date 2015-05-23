@@ -38,7 +38,9 @@ namespace HealthyAppAI
 			{                
 				bExist = File.Exists( getDataBasePath() );
 
-
+				CreateTable(enumTablesName.PROSPECT);
+				CreateTable(enumTablesName.INTERESTEDCONCEPTS);
+				CreateTable(enumTablesName.HAVECONCEPTS);
 				if (!bExist)//Si no existe, se crea la Base de Datos
 				{
 					SqliteConnection.CreateFile(getDataBasePath());
@@ -360,7 +362,80 @@ namespace HealthyAppAI
 		}
 		#endregion
 
+		#region Update
 
+		public static bool UpdateProspect(string IDProspect, Prospect newProspect)
+		{
+			bool bRes = false;
+			string strQuery = string.Empty; 
+
+			SqliteConnection connection = new SqliteConnection("Data Source=" + getDataBasePath() );
+			SqliteCommand command;
+
+			try
+			{
+				strQuery = "UPDATE PROSPECT SET Estatus = 'Completed' WHERE IDPROSPECT = '" + IDProspect+ "'";				
+
+				command = new SqliteCommand(strQuery, connection);			
+
+				connection.Open();
+
+				command.ExecuteNonQuery();
+
+				bRes = true;
+			}
+			catch (Exception excep)
+			{
+
+			}
+			connection.Close();
+
+			return bRes;
+		}
+		#endregion
+
+
+		#region get
+		public static List<Prospect> getProspects(string Status)
+		{
+			List<Prospect> reslProspects = new List<Prospect> ();
+
+			DataTable DT = new DataTable ("NombreDT");
+
+			SqliteConnection connection = new SqliteConnection("Data Source=" + SQLContext.getDataBasePath());
+
+			String nCommand;
+			SqliteDataAdapter nAdapter;
+
+			nCommand = "SELECT IDPROSPECT, FIRSTNAME, LASTNAME, CITY, PROFESSION FROM PROSPECT WHERE ESTATUS = '" + Status +"'";
+
+			try
+			{
+
+				nAdapter = new SqliteDataAdapter (nCommand, connection);
+				nAdapter.Fill (DT);
+
+				foreach (DataRow fila in DT.Rows) 
+				{
+					Prospect nProspect = new Prospect ()
+					{ 
+						IDProspect = fila [0].ToString(),
+						FirstName = fila [1].ToString(),
+						LastName = fila [2].ToString(),
+						Profession = fila [3].ToString(),
+						City = fila [4].ToString(),
+					};				 
+
+					reslProspects.Add (nProspect);
+				}	
+			}
+			catch(Exception excep) {
+
+			}	
+
+			return reslProspects;
+		}
+		#endregion
 
 	}
 }

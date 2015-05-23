@@ -20,6 +20,8 @@ namespace HealthyAppAI
 
 			View v = inflater.Inflate(Resource.Layout.FeedbackStep3, container, false);
 
+			TabContainer.btnNext.Text = "Next";
+
 			Helps.setNavigationEvents(TabContainer.btnPrev, TabContainer.btnNext, this, TabContainer.feedStep2, TabContainer.feedStep3, true, true);
 
 			return v;

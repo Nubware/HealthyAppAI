@@ -281,7 +281,7 @@ namespace HealthyAppAI
 		}
 	}
 
-	class Prospect
+	public class Prospect
 	{
 		public string _IDProspect;
 

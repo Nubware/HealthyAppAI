@@ -4,26 +4,80 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/bg">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#CCCCCC">
+        <TextView
+            android:text="Event"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textStyle="bold"
+            android:typeface="normal"
+            android:layout_weight="1" />
+        <TextView
+            android:text="SubEvent"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textStyle="bold"
+            android:typeface="normal"
+            android:layout_weight="1" />
+        <TextView
+            android:text="Demonstrator"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textStyle="bold"
+            android:typeface="normal"
+            android:layout_weight="1" />
+    </LinearLayout>
     <FrameLayout
         android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
         android:layout_height="0dip"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:minWidth="25px"
+        android:minHeight="25px" />
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="#8ad4caca">
         <Button
             android:id="@+id/btnPrevious"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/prev_button"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="#fff7bd31"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ffffffff"
+            android:layout_marginTop="5dp" />
         <Button
             android:id="@+id/btnNext"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/next_button"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="#fff7bd31"
+            android:layout_marginLeft="30dp"
+            android:enabled="true"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
     </LinearLayout>
 </LinearLayout>

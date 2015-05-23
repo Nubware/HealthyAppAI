@@ -40,7 +40,7 @@ namespace HealthyAppAI
 			signatureWitness.BackgroundColor = Color.Rgb(245, 242, 223);
 			signatureWitness.StrokeColor = Color.Black;
 
-			//_btnNext.Text = "Finish"; 
+			TabContainer.btnNext.Text = "Next"; 
 			Helps.setNavigationEvents(TabContainer.btnPrev, TabContainer.btnNext, this, TabContainer.appStep2, TabContainer.appStep4);
 
 			return v;

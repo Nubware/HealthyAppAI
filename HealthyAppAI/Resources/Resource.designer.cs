@@ -85,35 +85,38 @@ namespace HealthyAppAI
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0600a8
-			public const int Text = 2131099816;
+			// aapt resource value: 0x7f0600aa
+			public const int Text = 2131099818;
+			
+			// aapt resource value: 0x7f0600ab
+			public const int Text1 = 2131099819;
+			
+			// aapt resource value: 0x7f0600ac
+			public const int Text2 = 2131099820;
 			
 			// aapt resource value: 0x7f0600a9
-			public const int Text1 = 2131099817;
-			
-			// aapt resource value: 0x7f0600aa
-			public const int Text2 = 2131099818;
-			
-			// aapt resource value: 0x7f0600a7
-			public const int btn4 = 2131099815;
+			public const int btn4 = 2131099817;
 			
 			// aapt resource value: 0x7f06005e
 			public const int btnClear = 2131099742;
 			
+			// aapt resource value: 0x7f0600a8
+			public const int btnFeedComplete = 2131099816;
+			
 			// aapt resource value: 0x7f0600a6
-			public const int btnFeedComplete = 2131099814;
+			public const int btnHome = 2131099814;
+			
+			// aapt resource value: 0x7f0600a7
+			public const int btnHomeTres = 2131099815;
+			
+			// aapt resource value: 0x7f0600b3
+			public const int btnNext = 2131099827;
+			
+			// aapt resource value: 0x7f0600b2
+			public const int btnPrevious = 2131099826;
 			
 			// aapt resource value: 0x7f0600a4
-			public const int btnHome = 2131099812;
-			
-			// aapt resource value: 0x7f0600a5
-			public const int btnHomeTres = 2131099813;
-			
-			// aapt resource value: 0x7f0600ad
-			public const int btnNext = 2131099821;
-			
-			// aapt resource value: 0x7f0600ac
-			public const int btnPrevious = 2131099820;
+			public const int btnSubmit = 2131099812;
 			
 			// aapt resource value: 0x7f06005c
 			public const int checkReadRealease = 2131099740;
@@ -121,11 +124,11 @@ namespace HealthyAppAI
 			// aapt resource value: 0x7f060005
 			public const int dropProvince = 2131099653;
 			
-			// aapt resource value: 0x7f0600ab
-			public const int fragmentContainer = 2131099819;
+			// aapt resource value: 0x7f0600b1
+			public const int fragmentContainer = 2131099825;
 			
-			// aapt resource value: 0x7f0600a3
-			public const int imageView1 = 2131099811;
+			// aapt resource value: 0x7f0600a5
+			public const int imageView1 = 2131099813;
 			
 			// aapt resource value: 0x7f06000c
 			public const int interested = 2131099660;
@@ -568,11 +571,26 @@ namespace HealthyAppAI
 			// aapt resource value: 0x7f060058
 			public const int txtInitials = 2131099736;
 			
+			// aapt resource value: 0x7f0600af
+			public const int txtLabelInfo = 2131099823;
+			
 			// aapt resource value: 0x7f060001
 			public const int txtLastName = 2131099649;
 			
 			// aapt resource value: 0x7f060009
 			public const int txtMobile = 2131099657;
+			
+			// aapt resource value: 0x7f0600ad
+			public const int txtNameEvent = 2131099821;
+			
+			// aapt resource value: 0x7f0600b0
+			public const int txtNameInfo = 2131099824;
+			
+			// aapt resource value: 0x7f0600ae
+			public const int txtNameSubEvent = 2131099822;
+			
+			// aapt resource value: 0x7f0600a3
+			public const int txtPassDemonstrator = 2131099811;
 			
 			// aapt resource value: 0x7f060006
 			public const int txtPostalCode = 2131099654;
@@ -651,13 +669,16 @@ namespace HealthyAppAI
 			public const int FeedbackStep3 = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int Main = 2130903050;
+			public const int loginDemonstrator = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int RowFeedbackList = 2130903051;
+			public const int Main = 2130903051;
 			
 			// aapt resource value: 0x7f03000c
-			public const int TabContainer = 2130903052;
+			public const int RowFeedbackList = 2130903052;
+			
+			// aapt resource value: 0x7f03000d
+			public const int TabContainer = 2130903053;
 			
 			static Layout()
 			{

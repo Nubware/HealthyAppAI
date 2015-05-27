@@ -11,29 +11,36 @@
         android:padding="10dp"
         android:background="#CCCCCC">
         <TextView
-            android:text="Event"
+            android:id="@+id/txtNameEvent"
             android:textSize="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView1"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:typeface="normal"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/txtNameSubEvent"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:textStyle="bold"
             android:typeface="normal"
             android:layout_weight="1" />
         <TextView
-            android:text="SubEvent"
+            android:id="@+id/txtLabelInfo"
             android:textSize="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView1"
             android:textStyle="bold"
             android:typeface="normal"
             android:layout_weight="1" />
         <TextView
-            android:text="Demonstrator"
+            android:id="@+id/txtNameInfo"
             android:textSize="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView1"
             android:textStyle="bold"
             android:typeface="normal"
             android:layout_weight="1" />

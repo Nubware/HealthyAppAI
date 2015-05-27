@@ -27,10 +27,10 @@ namespace HealthyAppAI
 			Button button = FindViewById<Button>(Resource.Id.btnHome);
 
 			button.Click += delegate {
-				Intent intent = new Intent(this, typeof(TabContainer));
-				intent.PutExtra("FormType", "Application");
+				//Intent intent = new Intent(this, typeof(TabContainer));
+				//intent.PutExtra("FormType", "Application");
 
-				StartActivity(intent); 
+				StartActivity(typeof(loginDemostrator)); 
 			};
 
 			Button buttonTres = FindViewById<Button>(Resource.Id.btnHomeTres);

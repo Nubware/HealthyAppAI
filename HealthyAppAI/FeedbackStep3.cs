@@ -22,6 +22,8 @@ namespace HealthyAppAI
 
 			TabContainer.btnNext.Text = "Next";
 
+			TabContainer.btnNext.Text = "Finish";
+
 			Helps.setNavigationEvents(TabContainer.btnPrev, TabContainer.btnNext, this, TabContainer.feedStep2, TabContainer.feedStep3, true, true);
 
 			return v;

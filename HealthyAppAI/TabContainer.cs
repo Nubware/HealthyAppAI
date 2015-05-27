@@ -50,13 +50,17 @@ namespace HealthyAppAI
 
 				FragmentTransaction fragmentTx = this.FragmentManager.BeginTransaction();
 
+				this.setEventInfo();
+
 				if (Intent.GetStringExtra("FormType") == "Application")
 				{
 					fragmentTx.Add(Resource.Id.fragmentContainer, appStep1);
+					this.setDemonstratorInfo();
 				}
 				else
 				{
 					fragmentTx.Add(Resource.Id.fragmentContainer, feedStep1);
+					this.setFeedBackInfo();
 				}
 
 				fragmentTx.Commit();
@@ -71,6 +75,24 @@ namespace HealthyAppAI
 				Toast.MakeText (this, excep.Message, ToastLength.Long).Show ();
 			}
 
+		}
+
+		protected void setEventInfo()
+		{
+			this.FindViewById<TextView> (Resource.Id.txtNameEvent).Text = Model.NameEvent;	
+			this.FindViewById<TextView> (Resource.Id.txtNameSubEvent).Text = String.Format("{0} - {1}", Model.NameSubEvent, Model.DateEvent);
+		}
+
+		protected void setDemonstratorInfo()
+		{
+			this.FindViewById<TextView> (Resource.Id.txtLabelInfo).Text = "Demonstrator:";	
+			this.FindViewById<TextView> (Resource.Id.txtNameInfo).Text = "CRAIG OLIVER";
+		}
+
+		protected void setFeedBackInfo()
+		{
+			this.FindViewById<TextView> (Resource.Id.txtLabelInfo).Text = "Prospect:";	
+			this.FindViewById<TextView> (Resource.Id.txtNameInfo).Text =  String.Format("{0} {1}", Model.nProspect.FirstName, Model.nProspect.LastName);
 		}
 	}
 }

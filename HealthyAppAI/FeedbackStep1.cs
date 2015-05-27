@@ -22,6 +22,8 @@ namespace HealthyAppAI
 
 			TabContainer.btnPrev.Enabled = false;
 
+			TabContainer.btnPrev.Visibility = ViewStates.Invisible;
+
 			Helps.setNavigationEvents(TabContainer.btnPrev, TabContainer.btnNext, this, TabContainer.feedStep1, TabContainer.feedStep2, isFeedBack : true);
 
 			return v;

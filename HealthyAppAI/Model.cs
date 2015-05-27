@@ -14,9 +14,15 @@ namespace HealthyAppAI
 {
 	class Model {
 
-		public static string IDEvent = "SubEvent01";
+		public static string IDEvent = "01";
 
-		public static string IDSubEvent = "SubEvent01";
+		public static string IDSubEvent = "01";
+
+		public static string NameEvent = "Event01";
+
+		public static string NameSubEvent = "SubEvent01";
+
+		public static string DateEvent = DateTime.Today.ToShortDateString();
 
 		public static int localConcecutive = 1;
 

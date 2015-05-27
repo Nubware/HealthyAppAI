@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+
 namespace HealthyAppAI
 { 
 	class FeedbackStep2 : Fragment
@@ -20,6 +21,10 @@ namespace HealthyAppAI
 			View v = inflater.Inflate(Resource.Layout.FeedbackStep2, container, false);
 
 			TabContainer.btnPrev.Enabled = true;
+
+			TabContainer.btnPrev.Visibility = ViewStates.Visible;
+
+			TabContainer.btnNext.Text = "Next";
 
 			Helps.setNavigationEvents(TabContainer.btnPrev, TabContainer.btnNext, this, TabContainer.feedStep1, TabContainer.feedStep3,  isFeedBack : true);
 
